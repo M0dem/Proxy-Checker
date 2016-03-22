@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+
+# Proxy Checker v2
+# Command Line Interface only
+
 from argparse import ArgumentParser
 from Queue import Queue
 from threading import Thread
@@ -128,3 +133,10 @@ if __name__ == "__main__":
     IN_F.close()
     OUT_F.close()
     sys.exit()
+
+
+def cli():
+    pass
+
+if __name__ == "__main__":
+    cli()
