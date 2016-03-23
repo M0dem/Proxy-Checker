@@ -1,7 +1,25 @@
 # Proxy-Checker
-Check proxies to see if they are valid and working.
+Check a list of proxies and return the valid ones.
+You can use Proxy Checker as a library or CLI.
 
 If you find any bugs, please contact me.
 
-###### Requirements:
- - requests (HTTP library)
+# Requirements:
+ - **requests** (HTTP library)
+
+# Usage
+```python
+ ProxyChecker(inlist, threads = 200, verbose = False, timeout = 25)
+```
+######Example usage:
+```python
+ from proxychecker import ProxyChecker
+ proxy_checker = ProxyChecker(myproxylist, timeout = 20)
+ outlist = proxychecker.start()
+```
+****
+To use the CLI, directly execute `proxychecker.py` on the command line.
+######Example usage:
+```
+ ./proxychecker.py -h
+```
