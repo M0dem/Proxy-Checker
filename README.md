@@ -15,7 +15,7 @@ If you find any bugs, please contact me.
 ```python
  from proxychecker import ProxyChecker
  proxy_checker = ProxyChecker(myproxylist, timeout = 20)
- outlist = proxychecker.start()
+ outlist = proxy_checker.start()
 ```
 ****
 To use the CLI, directly execute `proxychecker.py` on the command line.
