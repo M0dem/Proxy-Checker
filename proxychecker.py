@@ -50,7 +50,7 @@ class ProxyChecker:
 
         return str(r.text)
 
-    def check_proxy(self, proxy, timeout = 5):
+    def check_proxy(self, proxy):
         proxies = {
                 "http": "http://" + proxy,
                 "https": "https://" + proxy
@@ -131,7 +131,7 @@ def CLI():
     parser.add_argument("outfile", type = str, help = "output proxy list file")
     parser.add_argument("-t", "--threads", type = int, default = threads_default, help = "set the number of threads running concurrently (default {})".format(threads_default))
     parser.add_argument("-v", "--verbose", action = "store_true", help = "say lots of useless stuff (sometimes)")
-    parser.add_argument("-t", "--timeout", type = int, help = "the timeout for testing proxies (default {})".format(timeout_default))
+    parser.add_argument("-to", "--timeout", type = int, help = "the timeout for testing proxies (default {})".format(timeout_default))
     args = parser.parse_args()
 
     # check to see if the input file actually exists
