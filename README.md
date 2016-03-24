@@ -21,5 +21,5 @@ If you find any bugs, please contact me.
 To use the CLI, directly execute `proxychecker.py` on the command line.
 ######Example usage:
 ```
- ./proxychecker.py -h
+ python proxychecker.py -h
 ```
